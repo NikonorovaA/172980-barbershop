@@ -1,175 +1,163 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Барбершоп «Бородинский»</title>
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-<header class="main-header">
-      <div class="container">
-        <nav class="main-navigation">
-        <ul>
-            <li>
-              <a href="D:\Git\172980-barbershop\index.html">Информация</a>
-            </li>
-            <li>
-              <a href="#">Новости</a>
-            </li>
-            <li>
-              <a href="#">Прайс-лист</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <a class="login" href="#">Вход</a>
-        </div>
-        </div>
-</header>
-
-      <div class="breadcrumbs">
-        <h1 class="shop_title">СРЕДСТВА ДЛЯ УХОДА</h1>
-        	<ul class="breadcrumbs_list">
-        		<li >
-        			<a href="D:\Git\172980-barbershop\index.html">Главная</a>
-        		</li>
-        		<li>
-        			<a href="#">Магазин</a>
-        		</li>
-        		<li>
-        			<a href="#">Cредства для ухода</a>
-        		</li>
-        	</ul>
-        </div>
-   <div class="producers_products">
-      <h2 class="producers_title">ПРОИЗВОДИТЕЛИ:</h2>
-	<form action="https://echo.htmlacademy.ru" method="get">
-	<label>
-	  <input type="checkbox" name="check1">Baxter of California
-	</label>
-	<label>
-	  <input type="checkbox" name="check2">MR Natty
-	</label>
-	<label>
-	  <input type="checkbox" name="check3">Suavecito
-	</label>
-	<label>
-	  <input type="checkbox" name="check4">Malin+Goeltz
-	</label>
-	<label>
-	  <input type="checkbox" name="check5">Murray's
-	</label>
-	<label>
-	  <input type="checkbox" name="check6">American Crew
-	</label>
-	</form>
-</div>
-<div class="group_products">
-  <h3 class="name_group_products">ГРУППЫ ТОВАРОВ:</h3>
-
-<form action="https://echo.htmlacademy.ru" method="get">
-
-	<label>
-	<input type="radio" name="radio1">Бритвенные принадлежности
-	</label>
-	<label>
-	<input type="radio" name="radio2">Средства для ухода
-	</label>
-	<label>
-	<input type="radio" name="radio3">Аксессуары
-	</label>
-	
-	<button class="btn show_group" type="submit">Показать</button>
-</div>
-
-<div class="products">
-	<div class="product">
-	<a href="#">
-	  <img src="img/baxter_of_california_travel_kit.png">
-	</a>
-		<p>Набор для путешествий</p>
-		<div class="product_price">2900</div>
-		<a href="#">Купить</a>
+<head>
+	<meta charset="utf-8">
+	<title>Барбершоп «Бородинский»</title>
+	<link href="css/style.css" rel="stylesheet"></head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="D:\Git\172980-barbershop\index.html">Информация</a><!--  правильный путь: index.html -->
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="#">Прайс-лист</a>
+					</li>
+					<li>
+						<a href="#">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a class="login" href="#">Вход</a>
+			</div>
+		</div>
+	</header>
+<!-- все, что лежит после хэдера и до футера обычно кладут в общий контейнер. Воспользуйся тегом <main> -->
+	<div class="breadcrumbs">
+		<h1 class="shop_title">СРЕДСТВА ДЛЯ УХОДА</h1> <!-- h1 не входит же в бредкрамс) Вынеси его перед этим дивом-->
+		<ul class="breadcrumbs_list">
+			<li >
+				<a href="D:\Git\172980-barbershop\index.html">Главная</a> <!-- про путь см. выше -->
+			</li>
+			<li>
+				<a href="#">Магазин</a>
+			</li>
+			<li>
+				<a href="#">Cредства для ухода</a>
+			</li>
+		</ul>
 	</div>
+	<!-- все, что лежит после бредкрамс лучше объединить в общий див -->
+	<!-- После сделать два дива: для левой колонки, где будет фильтр и для правой, где товары (для правой у тебя выделен, это правильно)-->
+	<div class="producers_products">
+		<h2 class="producers_title">ПРОИЗВОДИТЕЛИ:</h2>   
+		<form action="https://echo.htmlacademy.ru" method="get">
+			<label>
+				<input type="checkbox" name="check1">Baxter of California</label>
+			<label>
+				<input type="checkbox" name="check2">MR Natty</label>
+			<label>
+				<input type="checkbox" name="check3">Suavecito</label>
+			<label>
+				<input type="checkbox" name="check4">Malin+Goeltz</label>
+			<label>
+				<input type="checkbox" name="check5">Murray's</label>
+			<label>
+				<input type="checkbox" name="check6">American Crew</label>
+		</form>
+	</div>
+	<div class="group_products">
+		<h3 class="name_group_products">ГРУППЫ ТОВАРОВ:</h3> <!-- вроде ж равнозначные по смыслу заголовоки, с тем, что выше, который "производители" -->
 
-	<div class="product">
-	<a href="#">
-	  <img src="img/baxter_of_california_cond.png">
-	</a>
-		<p>Увлажняющий кондиционер</p>
-		<div class="product_price">750</div>
-		<a href="#">Купить</a>
-	</div>
+		<form action="https://echo.htmlacademy.ru" method="get"><!--  у формы всегда должен быть закрывающий тэг. И форма в нашем случае должна быть одна -->
 
-	<div class="product">
-	<a href="#">
-	  <img src="img/suavecito.png">
-	</a>
-		<p>Гель для волос</p>
-		<div class="product_price">290</div>
-		<a href="#">Купить</a>
-	</div>
-	
-	<div class="product">
-	<a href="#">
-	  <img src="img/american_crew_glina.png">
-	</a>
-		<p>Глина для укладки волос</p>
-		<div class="product_price">500</div>
-		<a href="#">Купить</a>
-	</div>
+			<label>
+				<input type="radio" name="radio1">Бритвенные принадлежности</label>
+			<label>
+				<input type="radio" name="radio2">Средства для ухода</label>
+			<label>
+				<input type="radio" name="radio3">Аксессуары</label>
 
-	<div class="product">
-	<a href="">
-	  <img src="img/american_crew_gel.png">
-	</a>
-		<p>Гель для волос American Crew </p>
-		<div class="product_price">300</div>
-		<a href="#">Купить</a>
-	</div>
+			<button class="btn show_group" type="submit">Показать</button>
+		</div>
 
-	<div class="product">
-	<a href="#">
-	  <img src="img/baxter_of_california_kit.png">
-	</a>
-		<p>Набор для бритья </p>
-		<div class="product_price">3900</div>
-		<a href="#">Купить</a>
-	</div>
+		<div class="products">
+			<div class="product">
+				<a href="#">
+					<img src="img/baxter_of_california_travel_kit.png"></a>
+				<p>Набор для путешествий</p><!--  это еще и является ссылкой. И ты пропустила у всех название товара -->
+				<div class="product_price">2900</div> <!-- ну, зачем же див)) Вполне подойдет спан. А вот в див бы я обернула этот спан и кнопку "Купить" -->
+				<a href="#">Купить</a>
+			</div>
 
-</div>
-<div class="site-paging">
-		<a href="#">1</a>
-		<a href="#">2</a>
-		<a href="#">3</a>
-		<a href="#">4</a>
-	</div>
-   
-     <footer class="main-footer">
-      <div class="container">
-        <section class="footer-contacts">
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
-          Телефон: +7 (812) 666-02-66
-        </section>
-        <section class="footer-social">
-          <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-copyright">
-          <p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-        </section>
-      </div>
-    </footer> 
-  </body>
+			<div class="product">
+				<a href="#">
+					<img src="img/baxter_of_california_cond.png"></a>
+				<p>Увлажняющий кондиционер</p>
+				<div class="product_price">750</div>
+				<a href="#">Купить</a>
+			</div>
+
+			<div class="product">
+				<a href="#">
+					<img src="img/suavecito.png"></a>
+				<p>Гель для волос</p>
+				<div class="product_price">290</div>
+				<a href="#">Купить</a>
+			</div>
+
+			<div class="product">
+				<a href="#">
+					<img src="img/american_crew_glina.png"></a>
+				<p>Глина для укладки волос</p>
+				<div class="product_price">500</div>
+				<a href="#">Купить</a>
+			</div>
+
+			<div class="product">
+				<a href="">
+					<img src="img/american_crew_gel.png"></a>
+				<p>Гель для волос American Crew</p>
+				<div class="product_price">300</div>
+				<a href="#">Купить</a>
+			</div>
+
+			<div class="product">
+				<a href="#">
+					<img src="img/baxter_of_california_kit.png"></a>
+				<p>Набор для бритья</p>
+				<div class="product_price">3900</div>
+				<a href="#">Купить</a>
+			</div>
+
+		</div>
+		<div class="site-paging">
+			<a href="#">1</a>
+			<a href="#">2</a> <!-- в ТЗ говорят:"- В пагинации активная страница не является ссылкой и не реагирует на наведение." -->
+ 			<a href="#">3</a>
+			<a href="#">4</a>
+		</div>
+
+		<footer class="main-footer">
+			<div class="container">
+				<section class="footer-contacts"> 
+					Барбершоп «Бородинский»
+					<br>
+					Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+					<br>
+					<a href="#">Как нас найти?</a>
+					<br>Телефон: +7 (812) 666-02-66
+				</section>
+				<section class="footer-social">
+					<p>Давайте дружить!</p>
+					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				</section>
+				<section class="footer-copyright">
+					<p>Разработано:</p>
+					<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+				</section>
+			</div>
+		</footer>
+	</body>
 </html>
