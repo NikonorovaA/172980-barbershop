@@ -56,11 +56,9 @@
 				</li>
 			</ul>
 		</div>
-		<!-- все, что лежит после бредкрамс лучше объединить в общий див -->
-		<!-- После сделать два дива: для левой колонки, где будет фильтр и для правой, где товары (для правой у тебя выделен, это правильно)-->
 			<div class="left_block_producers">
 				<form action="https://echo.htmlacademy.ru" method="get">
-					<fieldset>
+					<fieldset>  <!-- смотри, <fieldset> - это такой контейнер, он как див, только специально для формы) А еще legend может быть только один внутри fieldset. У нас по логике получается два таких блока: производители и группы товаров. В общем, надо второй блок в fieldset засунуть отдельный -->
 						<legend class="producers_title">ПРОИЗВОДИТЕЛИ:</legend>
 						<label>
 							<input type="checkbox" name="check1">Baxter of California</label>
@@ -76,9 +74,6 @@
 							<input type="checkbox" name="check6">American Crew</label>
 
 						<legend class="name_group_products">ГРУППЫ ТОВАРОВ:</legend>
-						<!-- вроде ж равнозначные по смыслу заголовоки, с тем, что выше, который "производители" -->
-
-						<!--  у формы всегда должен быть закрывающий тэг. И форма в нашем случае должна быть одна -->
 
 						<label>
 							<input type="radio" name="radio1">Бритвенные принадлежности</label>
@@ -95,15 +90,13 @@
 			<div class="right_block_products">
 				<div class="product">
 					<div>
-						<img src="img/baxter_of_california_travel_kit.jpg"></div>
+						<img src="img/baxter_of_california_travel_kit.jpg"></div> <!-- картинка в карточках товара у нас еще и ссылкой является по ТЗ -->
 					<a href="#">
-						<span>Набор для путешествий</span>
-						<span>Baxter of California</span>
+						<span>Набор для путешествий</span> 
+						<span>Baxter of California</span> <!-- надо второй хотя бы спан каким-то классом идентифицировать, чтобы ты могла ему прописать в стили написание заглавными буквами -->
 					</a>
-					<!--  это еще и является ссылкой. И ты пропустила у всех название товара -->
 					<div class="btn_price">
 						<span class="product_price">2900</span>
-						<!-- ну, зачем же див)) Вполне подойдет спан. А вот в див бы я обернула этот спан и кнопку "Купить" -->
 						<a href="#">Купить</a>
 					</div>
 				</div>
@@ -173,10 +166,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="site_paging">
+			<div class="site_paging"> <!-- будет лучше, если пагинация будет входить в .right_block_products, только не забудь все карточки товаров обернуть в еще один див, чтобы они не касались пагинации) -->
 				<a href="#">1</a>
 				<span>2</span>
-				<!-- в ТЗ говорят:"- В пагинации активная страница не является ссылкой и не реагирует на наведение." -->
 				<a href="#">3</a>
 				<a href="#">4</a>
 			</div>
