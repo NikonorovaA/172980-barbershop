@@ -6,17 +6,17 @@
 	<link href="css/style.css" rel="stylesheet"></head>
 <body>
 	<header class="main-header">
-		<div class="container">
+		<div class="container clearfix">
 			<nav class="main-navigation">
 				<ul>
 					<li>
 						<a href="index.html">
-							<!--  правильный путь: index.html -->
+							
 							<img src="logo_shop.png"></a>
 					</li>
 					<li>
 						<a href="index.html">Информация</a>
-						<!--  правильный путь: index.html -->
+						
 					</li>
 					<li>
 						<a href="#">Новости</a>
@@ -37,16 +37,16 @@
 			</div>
 		</div>
 	</header>
-	<!-- все, что лежит после хэдера и до футера обычно кладут в общий контейнер. Воспользуйся тегом <main>
-	-->
+	
 	<main class="container">
+	<div class="top_title clearfix">
 		<h1 class="shop_title">СРЕДСТВА ДЛЯ УХОДА</h1>
-		<div class="breadcrumbs">
-			<!-- h1 не входит же в бредкрамс) Вынеси его перед этим дивом-->
+		<div class="breadcrumbs ">
+			
 			<ul class="breadcrumbs_list">
 				<li >
 					<a href="index.html">Главная</a>
-					<!-- про путь см. выше -->
+				
 				</li>
 				<li>
 					<a href="#">Магазин</a>
@@ -56,9 +56,9 @@
 				</li>
 			</ul>
 		</div>
-		<!-- все, что лежит после бредкрамс лучше объединить в общий див -->
-		<!-- После сделать два дива: для левой колонки, где будет фильтр и для правой, где товары (для правой у тебя выделен, это правильно)-->
-			<div class="left_block_producers">
+		</div>
+		
+			<div class="left_block_producers clearfix">
 				<form action="https://echo.htmlacademy.ru" method="get">
 					<fieldset>
 						<legend class="producers_title">ПРОИЗВОДИТЕЛИ:</legend>
@@ -76,9 +76,7 @@
 							<input type="checkbox" name="check6">American Crew</label>
 
 						<legend class="name_group_products">ГРУППЫ ТОВАРОВ:</legend>
-						<!-- вроде ж равнозначные по смыслу заголовоки, с тем, что выше, который "производители" -->
-
-						<!--  у формы всегда должен быть закрывающий тэг. И форма в нашем случае должна быть одна -->
+					
 
 						<label>
 							<input type="radio" name="radio1">Бритвенные принадлежности</label>
@@ -100,10 +98,10 @@
 						<span>Набор для путешествий</span>
 						<span>Baxter of California</span>
 					</a>
-					<!--  это еще и является ссылкой. И ты пропустила у всех название товара -->
+					
 					<div class="btn_price">
 						<span class="product_price">2900</span>
-						<!-- ну, зачем же див)) Вполне подойдет спан. А вот в див бы я обернула этот спан и кнопку "Купить" -->
+					
 						<a href="#">Купить</a>
 					</div>
 				</div>
@@ -176,33 +174,30 @@
 			<div class="site_paging">
 				<a href="#">1</a>
 				<span>2</span>
-				<!-- в ТЗ говорят:"- В пагинации активная страница не является ссылкой и не реагирует на наведение." -->
 				<a href="#">3</a>
 				<a href="#">4</a>
 			</div>
 		</main>
 
-		<footer class="main_footer">
-			<div class="container">
-				<section class="footer_contacts">
-					Барбершоп «Бородинский»
-					<br>
-					Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
-					<br>
-					<a href="#">Как нас найти?</a>
-					<br>Телефон: +7 (812) 666-02-66</section>
-				<section class="footer_social">
-					<p>Давайте дружить!</p>
-					<a class="social_btn social_btn_vk" href="#">Вконтакте</a>
-					<a class="social_btn social_btn_fb" href="#">Фейсбук</a>
-					<a class="social_btn social_btn_inst" href="#">Инстаграм</a>
-				</section>
-				<section class="footer_copyright">
-					<p>Разработано:</p>
-					<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-				</section>
-			</div>
-
-		</footer>
+	 <footer class="main-footer">
+      <div class="container clearfix">
+        <section class="footer-contacts">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <a href="#">Как нас найти?</a><br>
+          Телефон: +7 (812) 666-02-66
+        </section>
+        <section class="footer-social">
+          <p>Давайте дружить!</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-copyright">
+          <p>Разработано:</p>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
+      </div>
+    </footer>
 </body>
 	</html>
