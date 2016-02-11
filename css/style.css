@@ -19,7 +19,7 @@ body
 }
 
 .container {
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
   padding: 0 10px;
   
@@ -49,30 +49,31 @@ body
 
 .top_title
 {
- float: left;
-	width: 300px;
 	min-height: 70px;
+	margin-bottom: 60px;
 
 }
 
 .left_block_producers
 {
-	 margin-bottom: 160px;
+	display: inline-block;
+	width: 180px;
+	margin-bottom: 80px;
+	
 }
 
 
 .form_filtrs{
-
-width: 160px;
 padding: 10px 0;
-min-height: 570px;
-margin-right: 70px;
+
 }
 
 .right_block_products{
+	display: inline-block;
+	width: 720px;
+	vertical-align: top;
 	margin-bottom: 80px;
-	
-	font-size: 12px;
+
 }
 .product{
 	display: inline-block;
@@ -80,19 +81,12 @@ margin-right: 70px;
 	width: 220px;
 	min-height: 290px;
 	margin-right: 20px;
-	padding: 0px 10px 10px 10px;
-	font-size: 12px;
+	padding: 0px 10px;
 }
 
-.product:nth-child(3n){
 
-	margin-right: 0px;
-
-}
 
 .container_product{
-  float: right;
-  margin-left:70px; 
 }
 
 ul,
@@ -110,13 +104,13 @@ li {
 /*стили для product*/
 
 .product_title{
-	float: left;
+display: inline-block;
 	width: 620px;
 	min-height: 70px;
 }
 .container_title
 {
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
   padding: 0 10px;
   margin-bottom: 60px;
@@ -124,47 +118,57 @@ li {
 }
 .container_item
 {
-	width: 940px;
+  width: 940px;
   margin: 0 auto;
   padding: 0 10px;
   min-height: 730px;
 }
 
 .right_block{
+	display: inline-block;
+	vertical-align: top;
+	width: 410px;
 	margin-bottom: 80px;
-	
 	font-size: 12px;
 }
 
 
 
 .product_title{
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .left_block{
-	float: left;
+	display: inline-block;
+	width: 480px;
 	margin-right:20px; 
 
 }
 
 .img_big
 {
-	clear: both;
+
 	width: 460px;
 	min-height: 495px;
 }
 
+.img_small
+{
+	display: inline-block;
+
+}
+
 .item2{
-	float: left;
+	
 	margin-right:10px; 
 }
 .item3{
-	float: left;
+	
 	margin-right:10px; 
 }
 .item4{
-	float: right;
+	
 	margin-left:0px; 
 }
 
